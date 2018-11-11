@@ -2,11 +2,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-x_tr = []
-y_tr = []
+x_tr = []   #<<<< Add your data here
+y_tr = []   #<<<<
 
 def func(x, a, b, c, d, e, f):
-    return a * np.exp(-b * x) * np.sin(c*x+d) + e*x + f;
+    return a * np.exp(-b * x) * np.sin(c*x+d) + e*x + f;  #<< this is your function beaing fitted
 figure = plt.figure()
 plt.plot(x_tr, y_tr, 'o', label='data')
 
